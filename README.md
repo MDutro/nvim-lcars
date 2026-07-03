@@ -8,6 +8,7 @@ A Neovim colorscheme inspired by the LCARS interface from Star Trek: The Next Ge
 |------|-------------|
 | `tng` | TNG-era LCARS — warm ochre, amber, and cool blue-grey |
 | `ds9` | DS9-era LCARS — cool purple, teal, and blue-violet |
+| `udc` | Film-era LCARS (ST V/VI) — electric teal-green, lime, and cyan on dark phosphor-green |
 
 ## Requirements
 

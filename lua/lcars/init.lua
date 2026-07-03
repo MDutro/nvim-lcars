@@ -3,6 +3,7 @@ local M = {}
 local palettes = {
   tng = "lcars.palettes.tng",
   ds9 = "lcars.palettes.ds9",
+  udc = "lcars.palettes.udc",
 }
 
 function M.load(variant, opts)

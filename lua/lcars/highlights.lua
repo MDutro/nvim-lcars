@@ -7,7 +7,7 @@ function M.apply(p)
 
   -- Editor
   hi("Normal",         { fg = p.fg,       bg = p.bg })
-  hi("NormalFloat",    { fg = p.fg,       bg = p.bg_soft })
+  hi("NormalFloat",    { fg = p.fg,       bg = p.bg_subtle })
   hi("NormalNC",       { fg = p.fg_muted, bg = p.bg })
   hi("ColorColumn",    { bg = p.bg_dim })
   hi("CursorLine",     { bg = p.bg_dim })

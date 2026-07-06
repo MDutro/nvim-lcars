@@ -6,19 +6,6 @@ local palettes = {
   udc = "lcars.palettes.udc",
 }
 
-local state_file = vim.fn.stdpath("data") .. "/lcars_variant"
-
-local function save_variant(variant)
-  vim.fn.writefile({ variant }, state_file)
-end
-
-local function saved_variant()
-  local ok, lines = pcall(vim.fn.readfile, state_file)
-  if ok and lines and lines[1] and palettes[lines[1]] then
-    return lines[1]
-  end
-end
-
 function M.load(variant)
   variant = variant or "tng"
 
@@ -42,12 +29,11 @@ function M.load(variant)
   vim.g.colors_name = "lcars-" .. variant
 
   require("lcars.highlights").apply(palette)
-  save_variant(variant)
 end
 
 function M.setup(opts)
   opts = opts or {}
-  M.load(opts.variant or saved_variant() or "tng")
+  M.load(opts.variant or "tng")
 end
 
 return M

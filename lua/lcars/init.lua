@@ -6,9 +6,8 @@ local palettes = {
   udc = "lcars.palettes.udc",
 }
 
-function M.load(variant, opts)
+function M.load(variant)
   variant = variant or "tng"
-  opts = opts or {}
 
   local palette_mod = palettes[variant]
   if not palette_mod then
@@ -34,7 +33,7 @@ end
 
 function M.setup(opts)
   opts = opts or {}
-  M.load(opts.variant or "tng", opts)
+  M.load(opts.variant or "tng")
 end
 
 return M

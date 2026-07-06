@@ -213,6 +213,16 @@ function M.apply(p)
   hi("DiffDelete",          { fg = p.git_delete, bg = p.bg_soft })
   hi("DiffText",            { fg = p.fg,         bg = p.surface })
 
+  -- indent scope plugins (deferred: plugins reset these on ColorScheme)
+  vim.schedule(function()
+    hi("SnacksIndentScope",        { fg = p.keyword })
+    hi("SnacksIndent",             { fg = p.border })
+    hi("MiniIndentscopeSymbol",    { fg = p.keyword })
+    hi("MiniIndentscopeSymbolOff", { fg = p.border })
+    hi("IblScope",                 { fg = p.keyword })
+    hi("IblIndent",                { fg = p.border })
+  end)
+
   -- Neo-tree
   hi("NeoTreeNormal",              { fg = p.fg,       bg = p.bg })
   hi("NeoTreeNormalNC",            { fg = p.fg_muted, bg = p.bg })

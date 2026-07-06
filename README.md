@@ -1,14 +1,14 @@
 # nvim-lcars
 
-A Neovim colorscheme inspired by the LCARS interface from Star Trek: The Next Generation. Dark background, warm ochre and steel-blue palette, full Treesitter and LSP diagnostic support.
+A Neovim colorscheme collection inspired by the computer interfaces of Star Trek. Three screen-accurate variants, each built from reference images of the original props. All syntax colors meet WCAG AA contrast requirements.
 
 ## Variants
 
 | Name | Description |
 |------|-------------|
-| `tng` | TNG-era LCARS — warm ochre, amber, and cool blue-grey |
-| `ds9` | DS9-era LCARS — cool purple, teal, and blue-violet |
-| `udc` | Film-era LCARS (ST V/VI) — electric teal-green, lime, and cyan on dark phosphor-green |
+| `tng` | TNG-era LCARS — screen-accurate golden yellow and muted periwinkle on warm dark background |
+| `ds9` | Cardassian — screen-accurate teal-cyan and dusty rose on near-black |
+| `udc` | Film-era (ST V/VI) — lime-green and electric cyan on dark blue-black |
 
 ## Requirements
 
@@ -30,6 +30,8 @@ A Neovim colorscheme inspired by the LCARS interface from Star Trek: The Next Ge
 }
 ```
 
+Replace `lcars-tng` with `lcars-ds9` or `lcars-udc` for other variants.
+
 ### packer.nvim
 
 ```lua
@@ -45,17 +47,29 @@ use {
 
 Activate directly:
 
-```lua
-vim.cmd("colorscheme lcars-tng")
+```vim
+:colorscheme lcars-tng
 ```
 
-Or via setup (for future configuration options):
+Or via setup:
 
 ```lua
 require("lcars").setup({
-  variant = "tng",
+  variant = "tng", -- "tng" | "ds9" | "udc"
 })
 ```
+
+## Plugin support
+
+Highlight groups are defined for:
+
+- Treesitter (`@` capture groups)
+- LSP diagnostics and semantic tokens
+- [gitsigns.nvim](https://github.com/lewis6991/gitsigns.nvim)
+- [neo-tree.nvim](https://github.com/nvim-neo-tree/neo-tree.nvim)
+- [snacks.nvim](https://github.com/folke/snacks.nvim) indent scope
+- [mini.indentscope](https://github.com/echasnovski/mini.indentscope)
+- [indent-blankline.nvim](https://github.com/lukas-reineke/indent-blankline.nvim)
 
 ## License
 

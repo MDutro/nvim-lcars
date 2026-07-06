@@ -30,21 +30,21 @@ return {
   namespace = "#9c8460",
   tag       = "#c8a828",
 
-  error     = "#c84848",
+  error     = "#cb5353",
   warning   = "#c09030",
   info      = "#7098c8",
   hint      = "#8888c0",
 
   git_add       = "#7098c8",
   git_change    = "#c8a828",
-  git_delete    = "#c84848",
+  git_delete    = "#cb5353",
   git_untracked = "#8888c0",
 
   black      = "#2c2212",
-  red        = "#c84848",
+  red        = "#cb5353",
   green      = "#6c9858",
   yellow     = "#c8a828",
-  blue       = "#5878b0",
+  blue       = "#4d7ac7",
   magenta    = "#8888c0",
   cyan       = "#6898a8",
   white      = "#e0c898",
@@ -55,5 +55,5 @@ return {
   br_blue    = "#7098c8",
   br_magenta = "#a8a8d8",
   br_cyan    = "#88b0c8",
-  br_white   = "#f0e0c0",
+  br_white   = "#cabca1",
 }

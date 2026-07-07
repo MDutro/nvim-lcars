@@ -25,8 +25,8 @@ return {
   func      = "#7098c8",
   type      = "#8888c0",
   decorator = "#a098c8",
-  variable  = "#a89e90",
-  property  = "#a89e90",
+  variable  = "#c4ae80",
+  property  = "#a09268",
   namespace = "#8c806e",
   tag       = "#c8a828",
 

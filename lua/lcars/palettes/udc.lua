@@ -23,7 +23,7 @@ return {
   number    = "#50d890",
   constant  = "#50d890",
   func      = "#30c8e0",
-  type      = "#4888c0",
+  type      = "#3888d8",
   decorator = "#38b8c8",
   variable  = "#78c0d8",
   property  = "#58a0b8",

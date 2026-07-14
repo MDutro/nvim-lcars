@@ -26,7 +26,7 @@ return {
   type      = "#3888d8",
   decorator = "#38b8c8",
   variable  = "#78c0d8",
-  property  = "#58a0b8",
+  property  = "#4888c0",
   namespace = "#408090",
   tag       = "#40e060",
 
